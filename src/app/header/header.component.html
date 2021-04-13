@@ -1,0 +1,67 @@
+<nav class="main-navbar">
+  <div class="menu-content">
+    <div class="logo">
+      <a class="sneakers" [routerLink]="['/home']" routerLinkActive="router-link-active">sneakers.ge</a>
+    </div>
+    <div class="menu">
+      <ul>
+        <li><a class="menuicon" [routerLink]="['/home']" routerLinkActive="router-link-active">მთავარი &nbsp; <i
+              class="home icon large"></i></a></li>
+        <li><a class="menuicon">პროდუქტი &nbsp;<i class="arrow down icon large"></i></a>
+          <ul class="dropdown">
+            <li>
+              <a [routerLink]="['/girl']" routerLinkActive="router-link-active"><i class="female icon large"></i> გოგოს
+                ფეხსაცმელი</a>
+              <a [routerLink]="['/boy']" routerLinkActive="router-link-active"><i class="male icon large"></i> ბიჭის
+                ფეხსაცმელი</a>
+              <a [routerLink]="['/child']" routerLinkActive="router-link-active"><i class="child icon large"></i>ბავშვის
+                ფეხსაცმელი</a>
+            </li>
+          </ul>
+        </li>
+        <li><a class="menuicon" [routerLink]="['/about']" routerLinkActive="router-link-active">ჩვენს შესახებ &nbsp;<i
+              class="info circle icon large"></i></a></li>
+      </ul>
+    </div>
+
+    <div class="signin">
+      <ul>
+        <li><a class="user" [routerLink]="['/signin']" routerLinkActive="router-link-active"><i
+              class="user circle icon big"></i></a></li>
+        <li><a class="cart" [routerLink]="['/cart']" routerLinkActive="router-link-active"><i
+              class="cart arrow down icon big"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <a class="sneakers"[routerLink]="['/home']" routerLinkActive="router-link-active">sneakers.ge</a>
+  <button style="outline:none" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="list ul icon"></i>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" [routerLink]="['/home']" routerLinkActive="router-link-active">მთავარი <i class="home icon"></i><span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          პროდუქტი
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" [routerLink]="['/girl']" routerLinkActive="router-link-active">გოგოს ფეხსაცმელი <i class="female icon"></i></a>
+          <a class="dropdown-item" [routerLink]="['/boy']" routerLinkActive="router-link-active">ბიჭის ფეხსაცმელი <i class="male icon"></i></a>
+          <a class="dropdown-item" [routerLink]="['/child']" routerLinkActive="router-link-active">ბავშვის ფეხსაცმელი <i class="child icon"></i></a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/about']" routerLinkActive="router-link-active">ჩვენს შესახებ <i class="info circle icon"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/signin']" routerLinkActive="router-link-active">ავტორიზაცია<i class="user circle icon"></i></a>
+      </li>
+     
+    </ul>
+  </div>
+</nav>
+<router-outlet></router-outlet>
