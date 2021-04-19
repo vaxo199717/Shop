@@ -44,7 +44,7 @@ export class SignupuserComponent implements OnInit {
     for (let i = 1; i <= 31; i++) {
       this.bday.push(i);
     }
-    for (let i = 1920; i <= 2020; i++) {
+    for (let i = 1920; i <= 2021; i++) {
       this.byear.push(i);
     }
 
